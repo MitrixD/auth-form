@@ -1,4 +1,5 @@
 :root {
+  /* Color variables */
   --color-background: #ffffff;
   --color-border: rgba(0, 0, 0, 0.42);
   --color-placeholder: rgba(0, 0, 0, 0.54);
@@ -9,6 +10,7 @@
   --color-text: rgba(0, 0, 0, 0.87);
 }
 
+/* Authentication Form container */
 .auth-form {
   align-items: center;
   background-color: var(--color-background);
@@ -27,6 +29,7 @@
   width: 400px;
 }
 
+/* Header Sign In inside the Authentication Form */
 .auth-form__header {
   font-size: 1.7rem;
   margin-bottom: 2rem;
@@ -34,11 +37,13 @@
   text-align: center;
 }
 
+/* Input container */
 .auth-form__input-container {
   margin-top: 1rem;
   position: relative;
 }
 
+/* Text input field */
 .auth-form__input {
   background-color: var(--color-background);
   border: none;
@@ -51,6 +56,7 @@
   width: 250px;
 }
 
+/* Label for the input field */
 .auth-form__input-label {
   color: var(--color-placeholder);
   font-size: 0.9rem;
@@ -64,6 +70,7 @@
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
+/* Styles when the input is focused */
 .auth-form__input-container--focused .auth-form__input-label,
 .auth-form__input:not(:placeholder-shown) + .auth-form__input-label {
   color: var(--color-primary);
@@ -71,21 +78,25 @@
   transform: translateY(-70%) scale(0.8);
 }
 
+/* Styles when hovering or focusing on the input field */
 .auth-form__input:hover,
 .auth-form__input:focus {
   border-color: var(--color-primary);
   box-shadow: 0 1px 2px var(--color-shadow);
 }
 
+/* Placeholder text color */
 .auth-form__input::placeholder {
   color: var(--color-placeholder);
 }
 
+/* Required indicator */
 .auth-form__required {
   color: var(--color-required);
   margin-left: 1px;
 }
 
+/* Remember Me checkbox section */
 .auth-form__remember-me {
   align-items: flex-start;
   display: flex;
@@ -94,6 +105,7 @@
   margin-top: 0;
 }
 
+/* Checkbox */
 .auth-form__checkbox {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -109,6 +121,7 @@
   width: 16px;
 }
 
+/* Checkbox checkmark */
 .auth-form__checkbox::before {
   background-color: transparent;
   border-radius: 2px;
@@ -122,14 +135,17 @@
   width: 10px;
 }
 
+/* Checkbox when checked */
 .auth-form__checkbox:checked::before {
   background-color: var(--color-primary);
 }
 
+/* Checkbox label */
 .auth-form__checkbox-label {
   font-size: 0.9rem;
 }
 
+/* Forgot Password section */
 .auth-form__forgot-password {
   align-items: flex-end;
   display: flex;
@@ -138,12 +154,14 @@
   margin-top: 0.5rem;
 }
 
+/* Forgot password link */
 .auth-form__forgot-password-link {
   color: var(--color-primary);
   font-size: 0.9rem;
   text-decoration: none;
 }
 
+/* Submit button */
 .auth-form__button {
   background-color: var(--color-primary);
   border: none;
@@ -160,15 +178,18 @@
   width: 265px;
 }
 
+/* Hover styles for the Submit button */
 .auth-form__button:hover {
   background-color: var(--color-secondary);
   box-shadow: 0 2px 4px var(--color-shadow);
 }
 
+/* Pressed animation for the Submit button */
 .auth-form__button:active {
   animation: buttonPress 0.3s linear;
 }
 
+/* Button animation */
 @keyframes buttonPress {
   0% {
     transform: scale(1);
