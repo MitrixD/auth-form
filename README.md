@@ -1,19 +1,24 @@
-## Available Scripts
+# Simple Authentication Form
 
-In the project directory, you can run:
+A simple authentication form built using HTML, CSS, and React. It allows users to enter their email and password and displays an alert when the submit button is pressed. The form styling is implemented using CSS without any external frameworks or libraries.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Email and password input fields
+- Basic form validation
+- Alert message on form submission
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Technologies Used
 
-### `npm run build`
+- React
+- TypeScript
+- HTML
+- CSS
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To get started with the authentication form, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/your-username/auth-form.git`
+2. Install the dependencies: `npm install`
+3. Start the development server: `npm start`
